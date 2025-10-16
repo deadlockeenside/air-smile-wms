@@ -68,5 +68,32 @@ namespace AirSmileWMS.Domain.Common {
                 return ResourceManager.GetString("EmptyId", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Наименование не может быть пустым..
+        /// </summary>
+        internal static string EmptyTitle {
+            get {
+                return ResourceManager.GetString("EmptyTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Слишком длинное наименование..
+        /// </summary>
+        internal static string TooLongTitle {
+            get {
+                return ResourceManager.GetString("TooLongTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Сделайте наименование более подробным..
+        /// </summary>
+        internal static string TooShortTitle {
+            get {
+                return ResourceManager.GetString("TooShortTitle", resourceCulture);
+            }
+        }
     }
 }
