@@ -10,8 +10,13 @@ public sealed class StockItem : BaseEntity
     private Amount _monthlyConsumption = null!;
     private Amount _stockBalance = null!;
     private Capacity _piecesPerPackage = null!;
+    private Image _image = null!;
 
-    // TODO: Image
+    public required Image Image 
+    {
+        get => _image;
+        set => _image = value ?? throw new InvalidDataException(ExceptionMessages.InvalidImage);
+    }
 
     public required Title Title 
     { 
@@ -19,7 +24,7 @@ public sealed class StockItem : BaseEntity
         set => _title = value ?? throw new InvalidDataException(ExceptionMessages.EmptyTitle);
     }
 
-    public Capacity PiecesPerPackage 
+    public required Capacity PiecesPerPackage 
     {
         get => _piecesPerPackage;
         set => _piecesPerPackage = value ?? throw new InvalidDataException(ExceptionMessages.InvalidCapacity);

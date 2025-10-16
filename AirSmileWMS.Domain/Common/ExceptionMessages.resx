@@ -132,6 +132,9 @@
   <data name="InvalidCapacity" xml:space="preserve">
     <value>Некорректный параметр "Шт в уп".</value>
   </data>
+  <data name="InvalidImage" xml:space="preserve">
+    <value>При попытке получить изображение произошла ошибка.</value>
+  </data>
   <data name="TooLongText" xml:space="preserve">
     <value>Слишком длинный текст.</value>
   </data>

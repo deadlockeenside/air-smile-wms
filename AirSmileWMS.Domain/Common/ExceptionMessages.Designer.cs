@@ -106,6 +106,15 @@ namespace AirSmileWMS.Domain.Common {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на При попытке получить изображение произошла ошибка..
+        /// </summary>
+        internal static string InvalidImage {
+            get {
+                return ResourceManager.GetString("InvalidImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Слишком длинный текст..
         /// </summary>
         internal static string TooLongText {
