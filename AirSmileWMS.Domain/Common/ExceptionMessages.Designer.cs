@@ -70,6 +70,15 @@ namespace AirSmileWMS.Domain.Common {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Текст не может быть пустым..
+        /// </summary>
+        internal static string EmptyText {
+            get {
+                return ResourceManager.GetString("EmptyText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Наименование не может быть пустым..
         /// </summary>
         internal static string EmptyTitle {
@@ -79,11 +88,29 @@ namespace AirSmileWMS.Domain.Common {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Слишком длинный текст..
+        /// </summary>
+        internal static string TooLongText {
+            get {
+                return ResourceManager.GetString("TooLongText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Слишком длинное наименование..
         /// </summary>
         internal static string TooLongTitle {
             get {
                 return ResourceManager.GetString("TooLongTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Сделайте текст более подробным..
+        /// </summary>
+        internal static string TooShortText {
+            get {
+                return ResourceManager.GetString("TooShortText", resourceCulture);
             }
         }
         

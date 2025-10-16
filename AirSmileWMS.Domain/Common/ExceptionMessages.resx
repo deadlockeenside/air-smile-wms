@@ -120,11 +120,20 @@
   <data name="EmptyId" xml:space="preserve">
     <value>Id не может быть пустым. Без него программа не сможет определить сущность.</value>
   </data>
+  <data name="EmptyText" xml:space="preserve">
+    <value>Текст не может быть пустым.</value>
+  </data>
   <data name="EmptyTitle" xml:space="preserve">
     <value>Наименование не может быть пустым.</value>
   </data>
+  <data name="TooLongText" xml:space="preserve">
+    <value>Слишком длинный текст.</value>
+  </data>
   <data name="TooLongTitle" xml:space="preserve">
     <value>Слишком длинное наименование.</value>
+  </data>
+  <data name="TooShortText" xml:space="preserve">
+    <value>Сделайте текст более подробным.</value>
   </data>
   <data name="TooShortTitle" xml:space="preserve">
     <value>Сделайте наименование более подробным.</value>

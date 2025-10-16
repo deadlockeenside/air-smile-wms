@@ -6,6 +6,7 @@ namespace AirSmileWMS.Domain.Entities;
 public sealed class StockItem : BaseEntity
 {
     private Title _title = null!;
+    private Text? _text;
 
     // TODO: Image
 
@@ -16,7 +17,13 @@ public sealed class StockItem : BaseEntity
     }
 
     // TODO: Pieces per package
-    // TODO: Stock item comment
+
+    public Text? Comment 
+    {
+        get => _text;
+        set => _text = value;
+    }
+
     // TODO: Monthly consumption
     // TODO: Stock balance
     // TODO: Reorder quantity (calculated as: monthly consumption − stock balance)
