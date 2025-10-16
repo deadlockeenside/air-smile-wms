@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.72.0" />
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.70.0.3819" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Common\ExceptionMessages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
