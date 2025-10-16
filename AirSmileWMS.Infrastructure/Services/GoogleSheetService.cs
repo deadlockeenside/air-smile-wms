@@ -14,4 +14,6 @@ internal static class GoogleSheetService
         HttpClientInitializer = GoogleCredential.FromFile(APIKey).CreateScoped(SheetsService.Scope.Spreadsheets),
         ApplicationName = "Air-Smile WMS Admin"
     });
+
+    // TODO: Import data from sheet to local rep
 }
