@@ -6,7 +6,6 @@ namespace AirSmileWMS.Domain.Entities;
 public sealed class StockItem : BaseEntity
 {
     private Title _title = null!;
-    private Text? _text;
     private Amount _monthlyConsumption = null!;
     private Amount _stockBalance = null!;
     private Capacity _piecesPerPackage = null!;
@@ -30,11 +29,7 @@ public sealed class StockItem : BaseEntity
         set => _piecesPerPackage = value ?? throw new InvalidDataException(ExceptionMessages.InvalidCapacity);
     }
 
-    public Text? Comment 
-    {
-        get => _text;
-        set => _text = value;
-    }
+    public Text? Comment { get; set; }
 
     public required Amount MonthlyConsumption 
     {

@@ -13,6 +13,10 @@ public sealed record Title : BaseValueObject<string>
 
         if (value.Length > BusinessRules.MaxTitleLength)
             throw new InvalidDataException(ExceptionMessages.TooLongTitle);
+
+        // Local Easter egg for the WMS users (18+)
+        if (value.Equals("ДБ дешевле", StringComparison.OrdinalIgnoreCase))
+            throw new InvalidDataException("Какой долбаеб вбил в наименование \"ДБ дешевле\"?");
     }
 
     // Static fabric method
