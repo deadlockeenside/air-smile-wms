@@ -1,8 +1,9 @@
-﻿namespace AirSmileWMS.Domain.Entities;
+﻿using AirSmileWMS.Domain.Common;
 
-public sealed class StockItem
+namespace AirSmileWMS.Domain.Entities;
+
+public sealed class StockItem : BaseEntity
 {
-    // TODO: Id
     // TODO: Image
     // TODO: Name
     // TODO: Pieces per package
