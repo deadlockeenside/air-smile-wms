@@ -1,6 +1,5 @@
 ﻿using AirSmileWMS.Domain.Common;
 using AirSmileWMS.Domain.ValueObjects;
-using System.Security.Cryptography;
 
 namespace AirSmileWMS.Domain.Entities;
 
@@ -10,6 +9,7 @@ public sealed class StockItem : BaseEntity
     private Text? _text;
     private Amount _monthlyConsumption = null!;
     private Amount _stockBalance = null!;
+    private Capacity _piecesPerPackage = null!;
 
     // TODO: Image
 
@@ -19,7 +19,11 @@ public sealed class StockItem : BaseEntity
         set => _title = value ?? throw new InvalidDataException(ExceptionMessages.EmptyTitle);
     }
 
-    // TODO: Pieces per package
+    public Capacity PiecesPerPackage 
+    {
+        get => _piecesPerPackage;
+        set => _piecesPerPackage = value ?? throw new InvalidDataException(ExceptionMessages.InvalidCapacity);
+    }
 
     public Text? Comment 
     {
@@ -30,13 +34,13 @@ public sealed class StockItem : BaseEntity
     public required Amount MonthlyConsumption 
     {
         get => _monthlyConsumption;
-        set => _monthlyConsumption = value != 0 ? value : throw new InvalidDataException(ExceptionMessages.InvalidAmount);
+        set => _monthlyConsumption = value ?? throw new InvalidDataException(ExceptionMessages.InvalidAmount);
     }
 
     public required Amount StockBalance 
     {
         get => _stockBalance;
-        set => _stockBalance = value != 0 ? value : throw new InvalidDataException(ExceptionMessages.InvalidAmount);
+        set => _stockBalance = value ?? throw new InvalidDataException(ExceptionMessages.InvalidAmount);
     }
 
     public int ReorderQuantity => MonthlyConsumption.Value - StockBalance.Value;

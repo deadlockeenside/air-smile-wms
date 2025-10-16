@@ -97,6 +97,15 @@ namespace AirSmileWMS.Domain.Common {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Некорректный параметр &quot;Шт в уп&quot;..
+        /// </summary>
+        internal static string InvalidCapacity {
+            get {
+                return ResourceManager.GetString("InvalidCapacity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Слишком длинный текст..
         /// </summary>
         internal static string TooLongText {

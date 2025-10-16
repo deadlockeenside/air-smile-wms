@@ -129,6 +129,9 @@
   <data name="InvalidAmount" xml:space="preserve">
     <value>Параметр не может быть отрицательным.</value>
   </data>
+  <data name="InvalidCapacity" xml:space="preserve">
+    <value>Некорректный параметр "Шт в уп".</value>
+  </data>
   <data name="TooLongText" xml:space="preserve">
     <value>Слишком длинный текст.</value>
   </data>
