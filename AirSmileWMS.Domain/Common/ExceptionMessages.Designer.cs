@@ -88,6 +88,15 @@ namespace AirSmileWMS.Domain.Common {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Параметр не может быть отрицательным..
+        /// </summary>
+        internal static string InvalidAmount {
+            get {
+                return ResourceManager.GetString("InvalidAmount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Слишком длинный текст..
         /// </summary>
         internal static string TooLongText {
