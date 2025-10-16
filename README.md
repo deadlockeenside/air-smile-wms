@@ -1,2 +1,2 @@
-# air-smile-wms
-A specialized warehouse management system for air-smile.ru
+This project is licensed under the [MIT License](./LICENSE).  
+© 2025 [deadlockeenside](https://github.com/deadlockeenside)
